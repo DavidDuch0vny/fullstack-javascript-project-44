@@ -2,7 +2,8 @@ import readlineSync from '/mnt/c/users/maksy/onedrive/pulpit/fullstack-javascrip
 
 const welcome = () => {
   const name = readlineSync.question('May I have your name?: ');
-  console.log(`Hello, ${name}!`);
+  console.log(`Hello,${name}!`);
+  return name;
 };
 
 export default welcome;

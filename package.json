@@ -18,7 +18,8 @@
   "type": "module",
   "homepage": "https://github.com/DavidDuch0vny/fullstack-javascript-project-44#readme",
   "bin": {
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js"
   },
   "dependencies": {
     "g": "^2.0.1",
