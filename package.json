@@ -16,5 +16,12 @@
     "url": "https://github.com/DavidDuch0vny/fullstack-javascript-project-44/issues"
   },
   "type": "module",
-  "homepage": "https://github.com/DavidDuch0vny/fullstack-javascript-project-44#readme"
+  "homepage": "https://github.com/DavidDuch0vny/fullstack-javascript-project-44#readme",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
+  "dependencies": {
+    "g": "^2.0.1",
+    "npm": "^9.4.2"
+  }
 }
