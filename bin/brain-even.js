@@ -6,20 +6,12 @@ const brainEven = (name) => {
   let count = 0;
   while (correct && count < 3) {
     const number = Math.floor(Math.random() * 100);
-    const isEven = number % 2 === 0 ? true : false;
+    const isEven = number % 2 === 0 ? 'yes' : 'no';
     console.log(`Question: ${number}`);
-    const orgAnswer = readlineSync.question('Your answer : ');
-    let answer = orgAnswer;
-    if (answer === 'yes') answer = true;
-    else if (answer === 'no') answer = false;
-    else {
-      console.log(`${orgAnswer} is wrong answer ;(. Correct answer was ${isEven}.`);
-      console.log(`Let's try again, ${name}!`);
-      break;
-    }
+    const answer = readlineSync.question('Your answer: ');
     if (isEven === answer) console.log('Correct!');
     else {
-      console.log(`${orgAnswer} is wrong answer ;(. Correct answer was ${isEven}.`);
+      console.log(`${answer} is wrong answer ;(. Correct answer was ${isEven}.`);
       console.log(`Let's try again, ${name}!`);
       correct = false;
     }
