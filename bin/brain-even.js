@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { welcome, check } from '/mnt/c/users/maksy/onedrive/pulpit/fullstack-javascript-project-44/src/cli.js';
 
 const brainEven = (name) => {
