@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { welcome, check, gCD } from '/mnt/c/users/maksy/onedrive/pulpit/fullstack-javascript-project-44/src/cli.js';
+import { welcome, check } from '/mnt/c/users/maksy/onedrive/pulpit/fullstack-javascript-project-44/src/cli.js';
 
 const brainGcd = (name) => {
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
@@ -8,7 +8,7 @@ const brainGcd = (name) => {
   while (correct && count < 3) {
     let isPrime = 'yes';
     const number = (Math.floor(Math.random() * 10) + 2);
-    for (let i = 2; i < number; i = i + 1) {
+    for (let i = 2; i < number; i += 1) {
       if (number % i === 0) {
         isPrime = 'no';
         break;
@@ -21,4 +21,4 @@ const brainGcd = (name) => {
 };
 
 const name = welcome();
-brainGcd(name); 
+brainGcd(name);

@@ -12,8 +12,8 @@ const brainProgression = (name) => {
     const resultId = Math.floor(Math.random() * arrangeLength);
     const arrange = [];
     arrange[0] = (Math.floor(Math.random() * 100));
-    if (resultId === 0) result = arrange[0];
-    for (let i = 1; i < arrangeLength; i = i + 1) {
+    if (resultId === 0) result = arrange[resultId];
+    for (let i = 1; i < arrangeLength; i += 1) {
       arrange[i] = arrange[i - 1] + offsetNumber;
       if (i === resultId) {
         result = arrange[resultId];
