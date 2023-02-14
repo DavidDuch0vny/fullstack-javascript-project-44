@@ -10,7 +10,7 @@ export function welcome() {
 export function check(name, result) {
   let correct = true;
   const answer = readlineSync.question('Your answer: ');
-  if (result.toString() === answer) {
+  if (result.toString() === answer.toLowerCase()) {
     console.log('Correct!');
     return correct;
   }
