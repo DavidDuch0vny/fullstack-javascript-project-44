@@ -3,7 +3,7 @@ import readlineSync from '/mnt/c/users/maksy/onedrive/pulpit/fullstack-javascrip
 export function welcome() {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name?: ');
-  console.log(`Hello,${name}!`);
+  console.log(`Hello, ${name}!`);
   return name;
 }
 
@@ -21,17 +21,17 @@ export function check(name, result) {
 }
 
 export function gCD(num1, num2) {
-    let result = 0;
-    let a = num1;
-    let b = num2;
-    while(a != b){
-        if(a > b) {
-            a -= b;
-        }
-        else {
-            b -= a;
-        }
+  let result = 0;
+  let a = num1;
+  let b = num2;
+  while(a != b){
+      if(a > b) {
+        a -= b;
+      }
+      else {
+        b -= a;
+      }
     }
-    result = a;
-    return result;
+  result = a;
+  return result;
 }

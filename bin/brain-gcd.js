@@ -6,8 +6,8 @@ const brainGcd = () => {
   let correct = true;
   let count = 0;
   while (correct && count < 3) {
-    const num1 = Math.floor(Math.random() * 10);
-    const num2 = Math.floor(Math.random() * 10);
+    const num1 = (Math.floor(Math.random() * 10) + 1);
+    const num2 = (Math.floor(Math.random() * 10) + 1);
     let result = gCD(num1, num2);
     console.log(`Question: ${num1} ${num2}`);
     correct = check(name, result);
