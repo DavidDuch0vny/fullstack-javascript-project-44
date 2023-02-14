@@ -19,3 +19,19 @@ export function check(name, result) {
   correct = false;
   return correct;
 }
+
+export function gCD(num1, num2) {
+    let result = 0;
+    let a = num1;
+    let b = num2;
+    while(a != b){
+        if(a > b) {
+            a -= b;
+        }
+        else {
+            b -= a;
+        }
+    }
+    result = a;
+    return result;
+}
