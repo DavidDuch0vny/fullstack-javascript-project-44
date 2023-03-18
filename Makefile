@@ -3,16 +3,16 @@ publish:
 install:
 	nmp ci
 brain-games:
-	node bin/brain-games.js
+	node src/bin/brain-games.js
 brain-even:
-	node bin/brain-even.js
+	node src/bin/brain-even.js
 brain-calc:
-	node bin/brain-calc.js
+	node src/bin/brain-calc.js
 brain-gcd:
-	node bin/brain-gcd.js
+	node src/bin/brain-gcd.js
 brain-progression:
-	node bin/brain-progression.js
+	node src/bin/brain-progression.js
 brain-prime:
-	node bin/brain-prime.js
+	node src/bin/brain-prime.js
 lint:
 	npx eslint .

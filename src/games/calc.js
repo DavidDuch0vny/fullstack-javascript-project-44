@@ -1,5 +1,4 @@
-#!/usr/bin/env node
-import { welcome, check } from '/mnt/c/users/maksy/onedrive/pulpit/fullstack-javascript-project-44/src/cli.js';
+import { check } from '../cli.js';
 
 const brainCalc = (name) => {
   console.log('What is the result of the expression?');
@@ -27,5 +26,4 @@ const brainCalc = (name) => {
   }
 };
 
-const name = welcome();
-brainCalc(name);
+export default brainCalc;
