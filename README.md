@@ -23,11 +23,13 @@ Run `brain-games` to see the list of games or run the specific game
 1. Guess missing number: `brain-progression`
 1. Prime number: `brain-prime`
 
-## Описание
+Description
+-----
 
-В рамках проекта необходимо реализовать набор мини-игр, запускаемых из консоли. Эти игры похожи на то, что обычно называют "Brain Games".
+Fun 5 games to spare the evening.
 
-Пример игры:
+How the games should be played
+-----
 
 https://asciinema.org/a/kaRTblc11PZIeDOvLF9i5zWv8 //brain-games
 https://asciinema.org/a/kktYVgBw4PMD8QevcTHD8q65l //brain-even

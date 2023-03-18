@@ -16,7 +16,7 @@ const gameChoice = (choice, name) => {
     case '0': break;
     default:
       console.log('No such option. Choose again, please.');
-      return gameChoice(choice, name);
+      return chooseTheGame();
   }
   return null;
 };
