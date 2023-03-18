@@ -1,24 +1,24 @@
-import readlineSync from '../node_modules/readline-sync/lib/readline-sync.js';
+import readlineSync from 'readline-sync/lib/readline-sync.js';
 import { welcome } from './cli.js';
-import brainEven from './games/even.js' 
-import brainProgression from './games/progression.js' 
-import brainPrime from './games/prime.js' 
-import brainGcd from './games/gcd.js' 
-import brainCalc from './games/calc.js' 
+import brainEven from './games/even.js';
+import brainProgression from './games/progression.js';
+import brainPrime from './games/prime.js';
+import brainGcd from './games/gcd.js';
+import brainCalc from './games/calc.js';
 
 const gameChoice = (choice, name) => {
-    switch (choice) {
-      case '1': brainEven(name); break;
-      case '2': brainCalc(name); break;
-      case '3': brainGcd(name); break;
-      case '4': brainProgression(name); break;
-      case '5': brainPrime(name); break;
-      case '0': break;
-      default:
-        console.log('No such option. Choose again, please.');
-        return gameChoice(choice, name);
+  switch (choice) {
+    case '1': brainEven(name); break;
+    case '2': brainCalc(name); break;
+    case '3': brainGcd(name); break;
+    case '4': brainProgression(name); break;
+    case '5': brainPrime(name); break;
+    case '0': break;
+    default:
+      console.log('No such option. Choose again, please.');
+      return gameChoice(choice, name);
   }
-  return null
+  return null;
 };
 
 const chooseTheGame = () => {
@@ -32,7 +32,6 @@ const chooseTheGame = () => {
   console.log('0. Exit');
   const choice = readlineSync.question('Your choice: ');
   gameChoice(choice, name);
-}
-
+};
 
 export default chooseTheGame;
