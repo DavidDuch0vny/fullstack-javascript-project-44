@@ -9,7 +9,7 @@ const brainGcd = (name) => {
     const num2 = (Math.floor(Math.random() * 10) + 1);
     const result = gCD(num1, num2);
     console.log(`Question: ${num1} ${num2}`);
-    correct = check(name, result);
+    correct = check(name, result, count);
     count += 1;
   }
 };

@@ -14,7 +14,7 @@ const brainPrime = (name) => {
       }
     }
     console.log(`Question: ${number}`);
-    correct = check(name, isPrime);
+    correct = check(name, isPrime, count);
     count += 1;
   }
 };

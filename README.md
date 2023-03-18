@@ -9,7 +9,7 @@ Install
 Via npm:
 
 ```bash
-sudo npm i -g di-brain-games
+sudo npm i -g @hexlet/code
 ```
 
 Usage
@@ -20,7 +20,6 @@ Run `brain-games` to see the list of games or run the specific game
 1. Even number: `brain-even`
 1. Calculate the expression: `brain-calc`
 1. Greatest common divisor: `brain-gcd`
-1. Balance the number: `brain-balance`
 1. Guess missing number: `brain-progression`
 1. Prime number: `brain-prime`
 

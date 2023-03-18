@@ -7,9 +7,14 @@ export function welcome() {
   return name;
 }
 
-export function check(name, result) {
+export function check(name, result, count) {
   let correct = true;
   const answer = readlineSync.question('Your answer: ');
+  if (result.toString() === answer.toLowerCase() && count === 2) {
+    console.log('Correct!');
+    console.log(`Congratulations, ${name}!`);
+    return correct;
+  }
   if (result.toString() === answer.toLowerCase()) {
     console.log('Correct!');
     return correct;

@@ -8,7 +8,7 @@ const brainEven = (name) => {
     const number = Math.floor(Math.random() * 100);
     const isEven = number % 2 === 0 ? 'yes' : 'no';
     console.log(`Question: ${number}`);
-    correct = check(name, isEven);
+    correct = check(name, isEven, count);
     count += 1;
   }
 };

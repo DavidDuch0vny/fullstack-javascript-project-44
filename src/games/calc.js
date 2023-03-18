@@ -21,7 +21,7 @@ const brainCalc = (name) => {
         console.log("Operation doesn't exist");
     }
     console.log(`Question: ${num1} ${operations[operationNum]} ${num2}`);
-    correct = check(name, result);
+    correct = check(name, result, count);
     count += 1;
   }
 };

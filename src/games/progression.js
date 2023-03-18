@@ -20,7 +20,7 @@ const brainProgression = (name) => {
     }
     arrange[resultId] = '..';
     console.log((`Question: ${arrange}`).replace(/,/g, ' '));
-    correct = check(name, result);
+    correct = check(name, result, count);
     count += 1;
   }
 };
