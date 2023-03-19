@@ -1,22 +1,23 @@
-import { check } from '../cli.js';
+import gameIndex from '../index.js';
 
-const brainPrime = (name) => {
-  console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
-  let correct = true;
-  let count = 0;
-  while (correct && count < 3) {
-    let isPrime = 'yes';
-    const number = (Math.floor(Math.random() * 10) + 2);
-    for (let i = 2; i < number; i += 1) {
-      if (number % i === 0) {
-        isPrime = 'no';
-        break;
-      }
+const getQA = () => {
+  let isPrime = 'yes';
+  const question = (Math.floor(Math.random() * 10) + 2);
+  for (let i = 2; i < question; i += 1) {
+    if (question % i === 0) {
+      isPrime = 'no';
+      break;
     }
-    console.log(`Question: ${number}`);
-    correct = check(name, isPrime, count);
-    count += 1;
   }
+  const qa = [];
+  qa.push(question);
+  qa.push(isPrime);
+  return qa;
+};
+
+const brainPrime = () => {
+  const title = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+  gameIndex(title, getQA);
 };
 
 export default brainPrime;

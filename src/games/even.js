@@ -1,16 +1,17 @@
-import { check } from '../cli.js';
+import gameIndex from '../index.js';
 
-const brainEven = (name) => {
-  console.log('Answer "yes" if the number is even, otherwise answer "no"');
-  let correct = true;
-  let count = 0;
-  while (correct && count < 3) {
-    const number = Math.floor(Math.random() * 100);
-    const isEven = number % 2 === 0 ? 'yes' : 'no';
-    console.log(`Question: ${number}`);
-    correct = check(name, isEven, count);
-    count += 1;
-  }
+const getQA = () => {
+  const question = Math.floor(Math.random() * 100);
+  const isEven = question % 2 === 0 ? 'yes' : 'no';
+  const qa = [];
+  qa.push(question);
+  qa.push(isEven);
+  return qa;
+};
+
+const brainEven = () => {
+  const title = 'Answer "yes" if the number is even, otherwise answer "no"';
+  gameIndex(title, getQA);
 };
 
 export default brainEven;
