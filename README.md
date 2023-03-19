@@ -9,7 +9,7 @@ Install
 Via npm:
 
 ```bash
-sudo npm i -g @hexlet/code
+sudo npm i -g davidduch0vny
 ```
 
 Usage
