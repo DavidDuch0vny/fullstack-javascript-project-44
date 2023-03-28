@@ -1,4 +1,4 @@
-import readlineSync from '../node_modules/readline-sync/lib/readline-sync.js';
+import readlineSync from 'readline-sync/lib/readline-sync.js';
 
 export function welcome() {
   console.log('Welcome to the Brain Games!');
