@@ -1,4 +1,4 @@
-import readlineSync from '/mnt/c/users/maksy/onedrive/pulpit/fullstack-javascript-project-44/node_modules/readline-sync/lib/readline-sync.js';
+import readlineSync from '../node_modules/readline-sync/lib/readline-sync.js';
 
 export function welcome() {
   console.log('Welcome to the Brain Games!');
